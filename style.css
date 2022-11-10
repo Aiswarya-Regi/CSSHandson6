@@ -1,0 +1,182 @@
+body {
+    background-image: url(./Background\ Image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main__nav{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.nav1{
+    text-decoration: none;
+    color:white;
+    
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: smaller;
+    font-weight: 700;
+    
+}
+.nav2{
+    text-decoration: none;
+    color:white;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: smaller;
+    font-weight: 700;
+}
+.nav3{
+    text-decoration: none;
+    color:white;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: smaller;
+    font-weight: 700;
+}
+.main__logo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+}
+.main__header{
+    display: flex;
+}
+.heading{
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+    margin-left: 90px;
+    margin-top: 140px;
+}
+
+.sub__heading{
+    color: white;
+    margin-top: 5px;
+    margin-left: 90px;
+    line-height: 7px;
+}
+.explore_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:32px;
+    width:180px;
+    margin-left: 90px;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+   
+}
+
+.grid__container{
+    display: grid;
+    row-gap: 30px;
+    column-gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 230px;
+    }
+.griditems1{
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    background-image: url(./Western\ Desert.jpeg) ;
+    background-position: center;
+    
+}
+.griditems2{
+    text-decoration: none;
+    color: white;
+    width:250px;
+    height: 250px;
+    border-radius: 5%;
+    background-image: url(./AI\ Bagawat.jpeg);
+    background-position: center;
+   
+}
+.griditems3{
+    text-decoration: none;
+    color: white;
+    width:250px;
+    height: 250px;
+    border-radius: 5%;
+    background-color: aqua;
+    background-image: url(./Pyramid\ of\ Giza.jpeg);
+    background-position: center;
+   
+}
+.griditems4{
+    text-decoration: none;
+    color: white;
+    width:250px;
+    height: 250px;
+    border-radius: 5%;
+    background-image: url(./Kalahari\ Dessert.jpeg);
+    background-position: center;
+
+}
+.griditems1:hover {
+    transform: translateY(-20px);
+}
+.griditems2:hover {
+    transform: translateY(-20px);
+}
+.griditems3:hover {
+    transform: translateY(-20px);
+}
+.griditems4:hover {
+    transform: translateY(-20px);
+}
+.text1{
+    margin-left: 30px;
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.text2{
+    margin-left: 30px;
+    margin-top: 8px;
+    font-size: small; 
+    line-height: 25px;
+}
+
+@media (max-width: 856px){
+    .griditem{
+        width:100%;
+        display: block;
+        top: 0;
+        right: 500px;
+        background-repeat: repeat;
+    }
+    
+    .griditem{
+        display: flex;
+        flex-direction: column;
+        width: 73%;
+        margin-top: 20px;
+            
+        }
+    .main__header{
+        flex-direction: column;
+        }
+    .grid__container{
+        grid-template-columns: 1fr;
+        }
+
+    .heading{
+         margin-top: 30px;
+        }
+    }
+
+
+
+
