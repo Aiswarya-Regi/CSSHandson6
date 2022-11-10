@@ -151,14 +151,6 @@ body {
 
 @media (max-width: 856px){
     .griditem{
-        width:100%;
-        display: block;
-        top: 0;
-        right: 500px;
-        background-repeat: repeat;
-    }
-    
-    .griditem{
         display: flex;
         flex-direction: column;
         width: 73%;
@@ -170,6 +162,7 @@ body {
         }
     .grid__container{
         grid-template-columns: 1fr;
+        justify-content: center;
         }
 
     .heading{
