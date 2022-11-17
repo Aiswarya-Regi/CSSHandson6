@@ -2,7 +2,6 @@ body {
     background-image: url(./Background\ Image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     
 }
 
@@ -15,7 +14,6 @@ body {
 .nav1{
     text-decoration: none;
     color:white;
-    
     margin-left: 100px;
     margin-top: 20px;
     font-size: smaller;
@@ -45,6 +43,11 @@ body {
     padding-top: 10px;
     padding-right: 10px;
     
+}
+.nav4{
+    text-decoration: none; 
+    margin-top: 10px; 
+    margin-left: 100px;
 }
 .main__header{
     display: flex;
@@ -150,14 +153,25 @@ body {
     line-height: 25px;
 }
 
-@media (max-width: 856px){
+/* mobile view */
+@media (min-width:340px)and (max-width: 580px){
+    .main__logo{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    
     .griditem{
         display: flex;
         flex-direction: column;
-        width: 73%;
+        width: 100%;
         margin-top: 20px;
-            
-        }
+        margin-left: -130px;
+            }
+    .griditems1{width: 200px; height: 200px;}
+    .griditems2{width: 200px; height: 200px;}
+    .griditems3{width: 200px; height: 200px;}
+    .griditems4{width: 200px; height: 200px;}
+    
     .main__header{
         flex-direction: column;
         }
@@ -165,10 +179,65 @@ body {
         grid-template-columns: 1fr;
         justify-content: center;
         }
+        .heading{
+         margin-top: 30px;
+         font-size: xx-large;
+         margin-left: 0;
+        }
+    .sub__heading{
+        margin-left: 0;
+        font-size: smaller;
+        }
+    .main__nav{
+        justify-content: flex-start;
+        margin-left: -90px;
+        }
+        .nav1{margin-left: 15px;}
+        .nav2{margin-left: 15px;}
+        .nav3{margin-left: 15px;}
+        .nav4{margin-left: 15px;}
+        
+        .text2{line-height: 15px;}
+    }
+ /* tab view */
 
+@media (min-width:581px) and (max-width:856px){
+    .main__logo{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    
+    .griditem{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 20px;
+        margin-left: -130px;
+            }
+    .main__header{
+        flex-direction: column;
+        }
+    .grid__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        }
     .heading{
          margin-top: 30px;
+         font-size: 45px;
+         margin-left: 0;
         }
+    .sub__heading{
+        margin-left: 0;
+        font-size: 15px;
+        }
+    .main__nav{
+        justify-content: flex-start;
+        margin-left: -90px;
+        }
+        .nav1{margin-left: 35px;}
+        .nav2{margin-left: 35px;}
+        .nav3{margin-left: 35px;}
+        .nav4{margin-left: 35px;}
     }
 
 
